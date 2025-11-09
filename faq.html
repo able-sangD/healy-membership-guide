@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자주 묻는 질문 | 힐리월드코리아</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 35px 20px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      line-height: 1.65;
+      text-align: left;
+    }
+    h2 {
+      color: #3d7af5;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.35em;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .question {
+      cursor: pointer;
+      font-weight: 600;
+      color: #2a4aa5;
+      margin: 10px 0;
+      position: relative;
+      padding-right: 20px;
+    }
+    .question::after {
+      content: "＋";
+      position: absolute;
+      right: 0;
+      font-weight: 600;
+      transition: transform 0.2s;
+    }
+    .question.active::after {
+      content: "－";
+      transform: rotate(180deg);
+    }
+    .answer {
+      display: none;
+      margin-left: 10px;
+      color: #444;
+      padding: 5px 0 5px 5px;
+      border-left: 3px solid #4c8cf5;
+      font-size: 0.95em;
+    }
+    .alert-box {
+      background: #f9f9ff;
+      border-left: 5px solid #4c8cf5;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+    .next-link {
+      text-align: center;
+      margin-top: 25px;
+    }
+    @media (max-width: 480px) {
+      main { padding: 25px 15px; }
+      h2 { font-size: 1.15em; }
+      .question, .answer { font-size: 0.9em; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>자주 묻는 질문 💬</h1>
+    <p>Healy World Korea | 회원 및 활동 Q&A</p>
+  </header>
+
+  <main>
+    <h2>1️⃣ 회원 등록 관련</h2>
+
+    <div class="faq-item">
+      <div class="question">Q. 외국인도 회원 등록이 가능한가요?</div>
+      <div class="answer">A. 가능합니다. 단, 외국인 등록증(앞·뒷면), 신청서, 통장 사본이 필요하며, 체류기간이 6개월 이상이어야 합니다. H-2(방문취업) 비자는 불가하며, D-8, D-9, F-2, F-4, F-5, F-6 비자만 허용됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 법인 명의로 회원 등록이 가능한가요?</div>
+      <div class="answer">A. 힐리월드코리아는 개인 회원제로 운영되며, 법인 명의 등록은 불가합니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 후원인 변경이 가능한가요?</div>
+      <div class="answer">A. 원칙적으로 불가능하며, 잘못 등록된 경우 가입 후 3일 이내 고객센터를 통해 1회에 한해 정정 가능합니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 동일인이 두 개 이상의 아이디로 가입할 수 있나요?</div>
+      <div class="answer">A. 불가능합니다. 동일인 복수 가입은 규정 위반으로 간주되며, 모든 수당이 몰수될 수 있습니다.</div>
+    </div>
+
+    <h2>2️⃣ 주문 및 결제 관련</h2>
+
+    <div class="faq-item">
+      <div class="question">Q. 배송은 얼마나 걸리나요?</div>
+      <div class="answer">A. 결제 완료 후 2~3영업일 내 배송되며, 주말·공휴일 주문은 다음 영업일에 발송됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 배송비는 어떻게 되나요?</div>
+      <div class="answer">A. 5만원 이상 주문 시 무료배송, 5만원 미만 시 4,000원 배송비가 부과됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 제품을 반품하려면 어떻게 해야 하나요?</div>
+      <div class="answer">A. 반품신청서를 작성 후 고객센터에 접수하고, 제품·구성품·영수증을 함께 송파구 올림픽로 319, 8층(본사)으로 발송합니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 결제 후 주문 취소는 언제까지 가능한가요?</div>
+      <div class="answer">A. 배송 준비 전까지 고객센터를 통해 취소 가능하며, 발송 이후에는 반품 절차로 진행됩니다.</div>
+    </div>
+
+    <h2>3️⃣ 환불 및 오토십 관련</h2>
+
+    <div class="faq-item">
+      <div class="question">Q. 오토십을 해지하려면 어떻게 하나요?</div>
+      <div class="answer">A. 다음 결제 예정일 3일 전까지 고객센터를 통해 해지 요청을 해야 합니다. 이미 결제된 건은 환불 규정에 따라 처리됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 환불은 언제 처리되나요?</div>
+      <div class="answer">A. 환불 요청 접수 후 3영업일 이내 처리되며, 카드 결제의 경우 승인 취소까지 최대 5일 소요될 수 있습니다.</div>
+    </div>
+
+    <h2>4️⃣ 보상 및 수당 관련</h2>
+
+    <div class="faq-item">
+      <div class="question">Q. QV와 BV는 무엇인가요?</div>
+      <div class="answer">A. QV(Qualified Volume)는 개인 구매 실적, BV(Bonus Volume)는 조직 전체 매출 실적을 의미합니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 액티브(Active) 유지란 무엇인가요?</div>
+      <div class="answer">A. 일정 기간 내 개인 구매(오토십 또는 신규 QV)가 발생한 상태를 의미하며, 비활성 시 다운라인의 DBV는 소멸됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 승급 보너스와 유지 보너스는 함께 받을 수 있나요?</div>
+      <div class="answer">A. 불가능합니다. 동일 월 내 승급과 유지가 동시에 발생할 경우 승급 보너스만 지급됩니다.</div>
+    </div>
+
+    <h2>5️⃣ 기타 운영 관련</h2>
+
+    <div class="faq-item">
+      <div class="question">Q. 개인 블로그나 SNS에서 힐리 제품을 홍보해도 되나요?</div>
+      <div class="answer">A. 회사의 승인을 받은 게시물 및 문구만 사용해야 하며, 의료적 효능·치료 표현이 포함된 홍보는 금지됩니다.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="question">Q. 힐리 공식 고객센터 연락처는 어디인가요?</div>
+      <div class="answer">A. 고객센터 ☎ 1660-1210 (월~목 10:00~18:30 / 금 10:00~17:30 / 주말·공휴일 휴무)</div>
+    </div>
+
+    <div class="alert-box">
+      💡 자주 묻는 질문은 멤버 교육 및 신규 등록자의 이해를 돕기 위해 구성되었습니다.<br>
+      정확한 정책 및 절차는 <strong>힐리월드코리아 공식 가이드북 및 공지사항</strong>을 기준으로 합니다.
+    </div>
+
+    <div class="next-link">
+      <a href="index.html" class="btn">🏠 홈으로 돌아가기</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Healy World Korea (자료 인용)<br>
+    본 페이지는 <strong>힐리월드코리아 내부 교육용</strong>으로 제작되었습니다.<br>
+    공식 홈페이지 또는 상업적 홍보용으로 사용되지 않으며,<br>
+    모든 콘텐츠는 <strong>Healy World Korea의 가이드라인을 준수</strong>합니다.
+  </footer>
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        const answer = q.nextElementSibling;
+        answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
