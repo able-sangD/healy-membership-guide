@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>보상 플랜 및 수익 구조 | 힐리월드코리아</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 35px 20px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      line-height: 1.6;
+    }
+    h2 {
+      color: #3d7af5;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.35em;
+    }
+    .bonus-item {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+    }
+    .question {
+      cursor: pointer;
+      font-weight: 600;
+      color: #2a4aa5;
+      margin: 12px 0;
+      position: relative;
+      padding-right: 20px;
+    }
+    .question::after {
+      content: "＋";
+      position: absolute;
+      right: 0;
+      transition: transform 0.2s;
+    }
+    .question.active::after {
+      content: "－";
+      transform: rotate(180deg);
+    }
+    .answer {
+      display: none;
+      margin-left: 8px;
+      color: #444;
+      padding: 6px 0 6px 10px;
+      border-left: 3px solid #4c8cf5;
+      font-size: 0.95em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+      font-size: 0.9em;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 6px;
+      text-align: center;
+    }
+    th {
+      background: #f3f6ff;
+      color: #333;
+    }
+    .alert-box {
+      background: #f9f9ff;
+      border-left: 5px solid #4c8cf5;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+    .next-link { text-align: center; margin-top: 25px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>보상 플랜 및 수익 구조 💎</h1>
+    <p>Healy World Korea | 멤버 보상 프로그램</p>
+  </header>
+
+  <main>
+    <h2>보상 항목 (총 8종)</h2>
+
+    <div class="bonus-item">
+      <div class="question">1️⃣ 다이렉트 보너스</div>
+      <div class="answer">직접 추천한 1세대 회원 구매 QV의 15%가 매주 지급됩니다. (구매금액의 약 8%)</div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">2️⃣ 월간 소비자 구독 보너스</div>
+      <div class="answer">비즈니스 미참여 소비자의 구독형 프로그램 지속 결제 시 월 단위로 자동 지급됩니다.</div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">3️⃣ 다이렉트 팀 보너스</div>
+      <div class="answer">2세대 구매 BV의 10%, 3세대 구매 BV의 5%가 지급됩니다.</div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">4️⃣ 듀얼 보너스</div>
+      <div class="answer">
+        <p>후원 계보의 DBV(듀얼보너스볼륨)을 기준으로 직급별 5~15% 지급됩니다.<br>액티브 유지 시 무한 누적, 비활성 시 다운라인 DBV 소멸.</p>
+        <table>
+          <tr><th>오토십 조건</th><th>QV합</th><th>듀얼보너스율</th><th>팀보너스</th></tr>
+          <tr><td>본인+2명</td><td>150</td><td>5%</td><td>-</td></tr>
+          <tr><td>본인+7명</td><td>400</td><td>6%</td><td>2단계(10%)</td></tr>
+          <tr><td>본인+15명</td><td>800</td><td>7%</td><td>3단계(5%)</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">5️⃣ 매니저 승급 보너스</div>
+      <div class="answer">
+        <table>
+          <tr><th>직급</th><th>보너스(₩)</th></tr>
+          <tr><td>TM</td><td>138,000</td></tr>
+          <tr><td>STM</td><td>276,000</td></tr>
+          <tr><td>ETM</td><td>522,000</td></tr>
+        </table>
+        <p>직무 유지 보너스와 중복 불가.</p>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">6️⃣ 리더 승급 보너스</div>
+      <div class="answer">
+        <table>
+          <tr><th>직급</th><th>보너스(₩)</th></tr>
+          <tr><td>DIR</td><td>966,000</td></tr>
+          <tr><td>SDIR</td><td>1,794,000</td></tr>
+          <tr><td>EDIR</td><td>3,450,000</td></tr>
+          <tr><td>VP</td><td>6,900,000</td></tr>
+          <tr><td>SVP</td><td>13,800,000</td></tr>
+          <tr><td>EVP</td><td>27,600,000</td></tr>
+          <tr><td>PRES</td><td>55,200,000</td></tr>
+        </table>
+        <p>직급 유지 보너스와 중복 불가.</p>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">7️⃣ 직급 유지 보너스</div>
+      <div class="answer">
+        <table>
+          <tr><th>직급</th><th>월 유지보너스(₩)</th></tr>
+          <tr><td>STM</td><td>200,000</td></tr>
+          <tr><td>ETM</td><td>400,000</td></tr>
+          <tr><td>DIR</td><td>600,000</td></tr>
+          <tr><td>VP 이상</td><td>2,000,000</td></tr>
+        </table>
+        <p>승급 보너스와 중복 불가.</p>
+      </div>
+    </div>
+
+    <div class="bonus-item">
+      <div class="question">8️⃣ 리더십 체크 매치 보너스</div>
+      <div class="answer">
+        <table>
+          <tr><th>직급</th><th>체크매치율</th></tr>
+          <tr><td>DIR</td><td>10%</td></tr>
+          <tr><td>SDIR</td><td>12%</td></tr>
+          <tr><td>EDIR 이상</td><td>15%</td></tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="alert-box">
+      ✅ DBV는 무한 누적 (소멸 없음)<br>⚠️ 비활성 시 다운라인 DBV 전액 소멸
+    </div>
+
+    <div class="next-link"><a href="index.html" class="btn">🏠 홈으로</a></div>
+  </main>
+
+  <footer>© 2025 Healy World Korea (자료 인용)</footer>
+
+  <script>
+    document.querySelectorAll('.question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
