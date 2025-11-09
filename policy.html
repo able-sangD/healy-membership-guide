@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>활동 규정 및 윤리 | 힐리월드코리아</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    main {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 35px 20px;
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      line-height: 1.65;
+      text-align: left;
+    }
+    h2 {
+      color: #3d7af5;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 1.35em;
+    }
+    .rule-item {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+    }
+    .question {
+      cursor: pointer;
+      font-weight: 600;
+      color: #2a4aa5;
+      margin: 12px 0;
+      position: relative;
+      padding-right: 20px;
+    }
+    .question::after {
+      content: "＋";
+      position: absolute;
+      right: 0;
+      transition: transform 0.2s;
+    }
+    .question.active::after {
+      content: "－";
+      transform: rotate(180deg);
+    }
+    .answer {
+      display: none;
+      margin-left: 8px;
+      color: #444;
+      padding: 6px 0 6px 10px;
+      border-left: 3px solid #4c8cf5;
+      font-size: 0.95em;
+    }
+    ul {
+      margin: 5px 0 15px 20px;
+      list-style: "🔹 ";
+      line-height: 1.6;
+    }
+    .alert-box {
+      background: #f9f9ff;
+      border-left: 5px solid #4c8cf5;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 25px;
+      font-size: 0.95em;
+    }
+    .next-link { text-align: center; margin-top: 25px; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>활동 규정 및 윤리 📘</h1>
+    <p>Healy World Korea | 공식 멤버 윤리 규정</p>
+  </header>
+
+  <main>
+    <h2>활동 규정 요약</h2>
+
+    <div class="rule-item">
+      <div class="question">1️⃣ 회원의 기본 의무</div>
+      <div class="answer">
+        <p>
+          힐리월드코리아의 모든 회원은 회사의 비전과 철학을 이해하고,  
+          윤리적 기준을 준수하며 활동해야 합니다.  
+          제품 또는 비즈니스 기회 설명 시 사실과 다른 정보나  
+          과장된 표현을 사용해서는 안 됩니다.
+        </p>
+        <ul>
+          <li>정직하고 투명한 정보 제공</li>
+          <li>비윤리적 언행 및 타 회원 비방 금지</li>
+          <li>회사의 지침, 교육, 공지사항을 숙지하고 준수</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-item">
+      <div class="question">2️⃣ 홍보 및 판매 활동 규정</div>
+      <div class="answer">
+        <p>
+          힐리월드코리아의 브랜드, 상표, 로고, 콘텐츠 등은 회사의 자산이며,  
+          사전 승인 없이 임의로 사용할 수 없습니다.  
+          의료적 표현이나 효과 보장은 금지되며,  
+          회사가 승인하지 않은 홍보자료, 영상, 홈페이지 등은 제작 및 배포할 수 없습니다.
+        </p>
+        <ul>
+          <li>공식 로고 및 이미지 무단 사용 금지</li>
+          <li>제품을 의료기기 또는 치료용으로 오인시키는 표현 금지</li>
+          <li>비공식 SNS, 블로그, 사이트 등에서의 판매 행위 금지</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-item">
+      <div class="question">3️⃣ 회원 간 거래 및 팀 운영</div>
+      <div class="answer">
+        <p>
+          모든 회원은 공정한 후원 관계를 기반으로 팀을 운영해야 하며,  
+          타 조직으로의 이동, 교차 후원, 회원 정보 유출 등의 행위는 금지됩니다.  
+          리더 회원은 하위 조직의 교육과 상담에 적극 협조해야 합니다.
+        </p>
+        <ul>
+          <li>타 조직 권유, 무단 이동, 재등록 유도 금지</li>
+          <li>회원 개인 정보를 상업적으로 이용하거나 유출 금지</li>
+          <li>하위 멤버에 대한 교육 및 지원 의무</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-item">
+      <div class="question">4️⃣ 윤리 위반 및 제재</div>
+      <div class="answer">
+        <p>
+          회사의 윤리 기준을 위반할 경우 경고, 활동정지, 자격 해지 등 단계적 제재가 적용됩니다.  
+          반복 위반 또는 중대한 위반 시 수당 정지 및 영구 제명될 수 있습니다.
+        </p>
+        <ul>
+          <li>1차 위반: 경고 및 시정 요구</li>
+          <li>2차 위반: 수당 보류 또는 활동 정지</li>
+          <li>3차 이상: 회원 자격 해지 및 재등록 불가</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="rule-item">
+      <div class="question">5️⃣ 기타 운영 원칙</div>
+      <div class="answer">
+        <p>
+          모든 공지 및 변경 사항은 공식 홈페이지(<a href="https://korea.healy.shop" target="_blank">korea.healy.shop</a>)  
+          및 이메일을 통해 공지됩니다.  
+          비공식 채널을 통한 정보 공유는 허위 전달의 원인이 되므로 금지됩니다.
+        </p>
+        <ul>
+          <li>운영 정책 및 보상 플랜은 회사 사정에 따라 변경될 수 있습니다.</li>
+          <li>회원은 공지된 변경 사항을 반드시 확인해야 합니다.</li>
+          <li>회사는 회원 간 분쟁에 대해 중립적 입장을 유지합니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="alert-box">
+      ⚠️ 승인되지 않은 홍보, 의료표현, 무단 재판매는 즉시 제재 사유입니다.<br>
+      모든 활동은 Healy World Korea의 공식 가이드라인을 반드시 준수해야 합니다.
+    </div>
+
+    <div class="next-link">
+      <a href="index.html" class="btn">🏠 홈으로</a>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Healy World Korea (자료 인용)<br>
+    본 페이지는 <strong>힐리월드코리아 내부 교육용</strong>으로 제작되었습니다.<br>
+    공식 홈페이지 또는 상업적 홍보용으로 사용되지 않으며,<br>
+    모든 콘텐츠는 <strong>Healy World Korea의 가이드라인을 준수</strong>합니다.
+  </footer>
+
+  <script>
+    document.querySelectorAll('.question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.classList.toggle('active');
+        const a = q.nextElementSibling;
+        a.style.display = a.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>
